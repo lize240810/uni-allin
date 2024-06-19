@@ -1,0 +1,23 @@
+{
+  "name": "uni-template",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "yarn workspace uni-preset-vue run dev",
+    "dev:uni": "yarn workspace uni-preset-vue run dev:mp-weixin",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "yarn@1.22.19",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
